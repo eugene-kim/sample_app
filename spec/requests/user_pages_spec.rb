@@ -54,7 +54,6 @@ describe "UserPages" do
       end
 
       describe "after saving a user" do
-
         before { click_button submit }
 
         let(:user) { User.find_by_email("user@example.com") }
@@ -64,7 +63,5 @@ describe "UserPages" do
         it { should have_link('Sign out') }
       end
     end
-
   end
-
 end
